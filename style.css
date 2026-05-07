@@ -1,0 +1,879 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    overflow:hidden;
+}
+
+.pagina{
+    width:100%;
+    height:100vh;
+    display:none;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:30px;
+    background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+    color:white;
+    position: relative;
+    overflow: hidden;
+}
+
+.pagina.activa{
+    display:flex;
+    animation:fade 1s ease;
+}
+
+h1{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+p{
+   p{
+    font-size:20px;
+    max-width:1200px;
+    padding: 0 20px;
+    z-index:5 ;
+    width:90%;
+    line-height:1.8;
+    word-wrap:break-word;
+    overflow-wrap:break-word;
+    white-space:normal;
+}
+}
+
+button{
+    margin-top:40px;
+    padding:15px 35px;
+    border:none;
+    border-radius:30px;
+    font-size:18px;
+    cursor:pointer;
+    background:white;
+    color:#ff4d6d;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.08);
+}
+
+.rojo{
+    background:linear-gradient(135deg,#8b0000,#ff4d4d);
+}
+
+.espacio{
+    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+}
+
+.bosque{
+    background:linear-gradient(135deg,#134e5e,#71b280);
+}
+
+.aviones{
+    background:linear-gradient(135deg,#56ccf2,#2f80ed);
+}
+
+.fogata{
+    background:linear-gradient(135deg,#42275a,#734b6d);
+}
+
+.final{
+    background:linear-gradient(135deg,#ff758c,#ff7eb3);
+}
+
+@keyframes fade{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+
+
+.foto{
+    width:270px;
+    height:210px;
+    object-fit:cover;
+    border-radius:20px;
+    position:absolute;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+.esquina1{
+    top:40px;
+    left:40px;
+}
+
+.esquina2{
+    top:40px;
+    right:40px;
+}
+
+.esquina3{
+    bottom:15px;
+    left:40px;
+}
+
+.esquina4{
+    bottom:15px;
+    right:40px;
+}
+
+.arriba1{
+    top:40px;
+    left:220px;
+}
+
+.arriba2{
+    top:40px;
+    right:220px;
+}
+
+.abajo1{
+    bottom:130px;
+    left:220px;
+}
+
+.abajo2{
+    bottom:130px;
+    right:220px;
+}
+
+.foto2{
+    width:280px;
+    height:220px;
+}
+
+
+.foto3{
+    width:320px;
+    height:220px;
+}
+
+.lado1{
+    top:50px;
+    left:80px;
+}
+
+.lado2{
+    top:50px;
+    right:80px;
+}
+
+.lado3{
+    bottom:15px;
+    left:80px;
+}
+
+.lado4{
+    bottom:15px;
+    right:80px;
+}
+.foto4{
+    width:320px;
+    height:220px;
+}
+
+.centro1{
+    top:15px;
+    left:40px;
+}
+
+.centro2{
+    top:15px;
+    right:40px;
+}
+
+.centro3{
+    bottom:40px;
+    left:40px;
+}
+
+.centro4{
+    bottom:40px;
+    right:40px;
+}
+
+.foto5{
+    width:275px;
+    height:200px;
+    position:absolute;
+    object-fit:cover;
+    border-radius:20px;
+}
+
+/* arriba */
+.sup1{top:20px; left:140px;}
+.sup2{top:20px; left:420px;}
+.sup3{top:20px; left:700px;}
+.sup4{top:20px; left:980px;}
+
+/* abajo */
+.inf1{bottom:25px; left:120px;}
+.inf2{bottom:25px; left:410px;}
+.inf3{bottom:25px; left:700px;}
+.inf4{bottom:25px; left:990px;}
+
+.foto6{
+    width:310px;
+    height:220px;
+    position:absolute;
+    object-fit:cover;
+    border-radius:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* arriba */
+.top1{
+    top:25px;
+    left:180px;
+}
+
+.top2{
+    top:25px;
+    right:180px;
+}
+
+/* abajo */
+.bot1{
+    bottom:35px;
+    left:180px;
+}
+
+.bot2{
+    bottom:35px;
+    right:180px;
+}
+
+.foto7{
+    width:320px;
+    height:230px;
+    position:absolute;
+    object-fit:cover;
+    border-radius:20px;
+}
+
+.esq1{
+    top:10px;
+    left:10px;
+}
+
+.esq2{
+    top:10px;
+    right:10px;
+}
+
+.esq3{
+    bottom:10px;
+    left:10px;
+}
+
+.esq4{
+    bottom:10px;
+    right:10px;
+}
+
+.foto8{
+    width:290px;
+    height:205px;
+    position:absolute;
+    object-fit:cover;
+    border-radius:20px;
+}
+
+.paz1{
+    top:35px;
+    left:40px;
+}
+
+.paz2{
+    top:35px;
+    right:40px;
+}
+
+.paz3{
+    bottom:35px;
+    left:40px;
+}
+
+.paz4{
+    bottom:35px;
+    right:40px;
+}
+.bosque{
+    background:linear-gradient(to bottom, #1f3b1f, #0f1d0f);
+}
+
+.foto9{
+    width:290px;
+    height:205px;
+    position:absolute;
+    object-fit:cover;
+    border-radius:20px;
+}
+
+.cor1{
+    top:25px;
+    left:50px;
+}
+
+.cor2{
+    top:25px;
+    right:50px;
+}
+
+.cor3{
+    bottom:35px;
+    left:330px;
+}
+
+.cor4{
+    bottom:35px;
+    right:330px;
+}
+
+.final{
+    background:linear-gradient(to bottom, #ffdde1, #ee9ca7);
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px 40px;
+    overflow:hidden;
+}
+
+.fotoFinal{
+    width:220px;
+    height:155px;
+    position:absolute;
+    object-fit:cover;
+    border-radius:20px;
+    box-shadow:0 6px 18px rgba(0,0,0,0.25);
+}
+
+/* arriba */
+.arriba{
+    top:15px;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+/* abajo */
+.abajo1{
+    bottom:15px;
+    left:80px;
+}
+
+.abajo2{
+    bottom:15px;
+    right:80px;
+}
+
+.final h1{
+    font-size:46px;
+    margin:0 0 18px 0;
+    color:white;
+    z-index:2;
+}
+
+.final p{
+    font-size:24px;
+    max-width:850px;
+    line-height:1.7;
+    margin:0;
+    color:white;
+    z-index:2;
+    padding:0 20px;
+}
+.foto11{
+    width:300px;
+    height:220px;
+    position:absolute;
+    object-fit:cover;
+    border-radius:18px;
+}
+
+/* arriba */
+.uno{
+    top:35px;
+    left:80px;
+}
+
+.dos{
+    top:35px;
+    right:80px;
+}
+
+/* abajo */
+.tres{
+    bottom:35px;
+    left:80px;
+}
+
+.cuatro{
+    bottom:35px;
+    right:80px;
+}
+
+body{
+    overflow:hidden;
+}
+
+
+/* TÍTULO (Hola mi amor 💖) */
+.p1 h1{
+    font-size:100px;
+    font-family: 'Georgia', serif;
+}
+
+/* TEXTO DE ABAJO */
+.p1 p{
+    font-size:50px;
+    font-family: 'Georgia', serif;
+    margin-top:20px;
+}
+
+body{
+    overflow:hidden;
+}
+
+/* TEXTO pantalla 2 */
+.p2 p{
+    font-size:25px;     /* más grande */
+    margin-top:30px;    /* baja el texto */
+    text-align:center;
+    font-family: 'Georgia', serif;
+}
+
+/* BOTÓN pantalla 2 */
+.p2 button{
+    margin-top:60px;    /* baja el botón respecto al texto */
+}
+
+/* TEXTO pantalla 3 */
+.p3 p{
+    font-size:28px;
+    margin-top:150px;
+    text-align:center;
+    font-family: 'Georgia', serif; /* puedes cambiarla */
+}
+
+
+.p3 button{
+    margin-top:60px;
+    
+}
+
+.p4 p{
+    font-size:28px;
+    margin-top:150px;
+    text-align:center;
+    font-family: 'Georgia', serif; /* puedes cambiarla */
+}
+
+
+.p4 button{
+    margin-top:60px;
+    
+}
+
+.p5 p{ 
+    font-size:28px;
+    margin-top: 110px;
+    text-align: center;
+     font-family: 'Georgia', serif; 
+     }
+
+     .p5 button{
+    margin-top:60px;
+    
+}
+    
+.p6 p{ 
+    font-size:28px;
+    margin-top: 25px;
+    text-align: center;
+     font-family: 'Georgia', serif; 
+     }
+
+     .p6 button{
+    margin-top:60px;
+    position:absolute;
+    right:30px;   /* lo manda a la derecha */
+    bottom:30px;  /* lo baja */
+    
+    font-size:14px;   /* más pequeño */
+    padding:8px 15px; /* tamaño del botón */
+}
+
+.p7 p{ 
+    font-size:28px;
+    margin-top: 110px;
+    text-align: center;
+     font-family: 'Georgia', serif; 
+     }
+
+     .p7 button{
+    margin-top:60px;
+    }
+    
+    .p8 p{ 
+    font-size:28px;
+    margin-top: 110px;
+    text-align: center;
+     font-family: 'Georgia', serif; 
+     }
+
+     .p8 button{
+    margin-top:90px;
+    }
+    .p9 p{ 
+    font-size:28px;
+    margin-top: 110px;
+    text-align: center;
+     font-family: 'Georgia', serif; 
+     }
+
+     .p9 button{
+    margin-top:60px;
+    }
+
+    .p10 p{ 
+    font-size:28px;
+    margin-top: 15px;
+    text-align: center;
+     font-family: 'Georgia', serif; 
+     }
+
+     .p10 button{
+    margin-top:60px;
+    position:absolute;
+    right:30px;   /* lo manda a la derecha */
+    bottom:30px;  /* lo baja */
+    
+    font-size:14px;   /* más pequeño */
+    padding:8px 15px; /* tamaño del botón */
+}
+
+.p11 p{ 
+    font-size:28px;
+    margin-top: 110px;
+    text-align: center;
+     font-family: 'Georgia', serif; 
+     }
+
+     .p11 button{
+    margin-top:60px;
+    
+}
+
+.p12 h1{
+    font-size:40px;
+    font-family: 'Georgia', serif;
+}
+
+/* TEXTO DE ABAJO */
+.p12 p{
+    font-size:25px;
+    font-family: 'Georgia', serif;
+    margin-top:20px;
+}
+
+.p1{
+    background:url("img/fondo/1.jpg") center/cover no-repeat;
+}
+
+.p2{
+    background:url("img/fondo/2.jpg") center/cover no-repeat;
+}
+
+.p3{
+    background:url("img/fondo/3.jpg") center/cover no-repeat;
+}
+
+.p4{
+    background:url("img/fondo/4.jpg") center/cover no-repeat;
+}
+
+.p5{
+    background:url("img/fondo/5.jpg") center/cover no-repeat;
+}
+
+.p6{
+    background:url("img/fondo/6.jpg") center/cover no-repeat;
+}
+
+.p7{
+    background:url("img/fondo/7.jpg") center/cover no-repeat;
+}
+
+.p8{
+    background:url("img/fondo/8.jpg") center/cover no-repeat;
+}
+
+.p9{
+    background:url("img/fondo/9.jpg") center/cover no-repeat;
+}
+
+.p10{
+    background:url("img/fondo/10.jpg") center/cover no-repeat;
+}
+
+.p11{
+    background:url("img/fondo/11.jpg") center/cover no-repeat;
+}
+
+.p12{
+    background:url("img/fondo/12.jpg") center/cover no-repeat;
+}
+
+.p1{
+    background:url("img/fondo/1.jpg") no-repeat;
+    background-size:cover;
+    background-position:top center;
+}
+
+/* Pantalla 3 - mostrar más abajo */
+.p3{
+    background:url("img/fondo/3.jpg") no-repeat;
+    background-size:cover;
+    background-position:bottom center;
+}
+
+/* Pantalla 4 - mostrar más abajo */
+.p4{
+    background:url("img/fondo/4.jpg") no-repeat;
+    background-size:cover;
+    background-position:bottom center;
+}
+
+/* Pantalla 5 - mostrar más abajo */
+.p5{
+    background:url("img/fondo/5.jpg") no-repeat;
+    background-size:cover;
+    background-position:bottom center;
+}
+
+/* Pantalla 6 - más protagonismo abajo */
+.p6{
+    background:url("img/fondo/6.jpg") no-repeat;
+    background-size:cover;
+    background-position:bottom center;
+}
+body{
+    font-family:Arial, sans-serif;
+    overflow:hidden;
+}
+
+button{
+    background:#fff8f0;
+    color:#8b1e3f;
+    border:2px solid #d8a7b1;
+    border-radius:30px;
+    padding:12px 26px;
+    font-size:18px;
+    font-family:'Georgia', serif;
+    font-style:italic;
+    cursor:pointer;
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+button:hover{
+    background:#ffe6ec;
+    transform:scale(1.05);
+}
+
+/* Pantalla 2 texto */
+.p2 p{
+    color:#000000;   /* crema elegante */
+}
+
+/* Pantalla 2 botón */
+.p2 button{
+    color:#8b1e3f;
+    background:#fff8f0;
+
+    position:absolute;
+    bottom:8px;      /* casi al borde */
+    right:650px;      /* puedes cambiar lado */
+
+    font-size:13px;
+    padding:6px 14px;
+}
+
+.p12 h1,
+.p12 p{
+    color:#556b2f;
+}
+
+
+/* BOTONES PERSONALIZADOS */
+
+/* Pantalla 1 */
+.p1 button{
+    background:#f5fff5;
+    color:#206e01;
+    border:2px solid #050404;
+}
+
+
+.p2 button{
+    background:#f5fff5;
+    color:#cc0303;
+    border:2px solid #050404;
+}
+
+.p4 button{
+    background:#ffffff;
+    color:#5f5e5e;
+    border:2px solid #bfcfa8;
+}
+
+
+/* Pantalla 5 */
+.p5 button{
+    background:#ffffff;
+    color:#02993c;
+    border:2px solid #000000;
+}
+
+/* Pantalla 6 */
+.p6 button{
+    background:#ffffff;
+    color:#8d0303;
+    border:2px solid #bfcfa8;
+}
+
+/* Pantalla 7 */
+.p7 button{
+    background:#fffeff;
+    color:#0f0038;
+    border:2px solid #d8c8b0;
+}
+
+/* Pantalla 8 */
+.p8 button{
+    background:#ffffff;
+    color:rgb(10, 2, 85);
+    border:2px solid #f0f0f0;
+}
+
+/* Pantalla 9 */
+.p9 button{
+    background:#ffffff;
+    color:#015fac;
+    border:2px solid #ffffff;
+}
+
+/* Pantalla 10 */
+.p10 button{
+    background:#fcfffb;
+    color:#04a4e4;
+    border:2px solid #000000;
+}
+
+.p11 button{
+    background:#fcfffb;
+    color:#e40474;
+    border:2px solid #000000;
+}
+
+
+/* Animación general de la pantalla */
+.pagina{
+    opacity:0;
+    transform:translateY(30px);
+    transition: all 0.6s ease;
+}
+
+/* Cuando está activa */
+.pagina.activa{
+    opacity:1;
+    transform:translateY(0);
+}
+
+.pagina.activa p,
+.pagina.activa h1{
+    animation: fadeTexto 1s ease;
+}
+
+@keyframes fadeTexto{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.pagina.activa img{
+    animation: zoomIn 0.8s ease;
+}
+
+@keyframes zoomIn{
+    from{
+        opacity:0;
+        transform:scale(0.9);
+    }
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+}
+
+/* Contenedor final */
+.p12{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+/* Título */
+.p12 h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+/* Texto */
+.p12 p{
+    font-size:24px;
+    max-width:600px;
+}
+
+.p12.activa h1{
+    animation: aparecerFinal 1.2s ease;
+}
+
+.p12.activa p{
+    animation: aparecerFinal 1.8s ease;
+}
+
+@keyframes aparecerFinal{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
